@@ -1,3 +1,3 @@
 # simple_blockchain
 
-A simple blochain built with nodejs
+A simple blockchain built with nodejs
