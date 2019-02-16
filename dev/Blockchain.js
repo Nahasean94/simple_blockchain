@@ -6,7 +6,7 @@ class Blockchain {
         this.chain = []
         this.pendingTransactions = []
 
-        this.createNewBlock(100,'0','0')
+        this.createNewBlock(1050,'0','0')
     }
 
 
@@ -57,7 +57,7 @@ class Blockchain {
         while (hash.substring(0, 4) !== '0000') {
             nonce++
             hash = this.hashBlock(previousBlockHash, currentBlockData, nonce)
-            // console.log(hash)
+
         }
             console.log(hash,'is the hash')
         return nonce
